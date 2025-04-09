@@ -1,4 +1,128 @@
-#welcomeText{
+*{
+    margin: 0;
+    padding-left: 2px ;
+    padding-right: 2px;
+    box-sizing: border-box;
+
+
+}
+body{
+    background: #2B0E2F;
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.navbar p{
+    font-family: 'Montserrat-LightItalic', sans-serif;
+    color: #E4E1DD;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*width: 100vw;
+    height: 100vh;*/
+}
+.header #large-photo{
+    top: 33vh;
+    display: flex;
+    justify-content: center;
+    width: 100vh;
+    height: 100vh;
+}
+.header #big-text{
+    justify-self: center;
+    height: fit-content;
+    position: relative;
+    top: 50vh;
+}
+
+.header #big-text h3  {
+    font-family: 'Montserrat-LightItalic', sans-serif;
+    color: #E4E1DD;
+}
+.header #big-text h1 {
+    font-family: 'Array-Bold', serif ;
+    color: aliceblue;
+    font-size: 124px;
+}
+
+
+.header #large-photo img{
+    width: auto;
+    height: 50vh;
+    position: absolute;
+    top: 33vh;
+    z-index: -1;
+
+}
+.about{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding-right: 20px;
     padding-left: 20px;
-    color: darkviolet;
+}
+
+.about #myPhoto img {
+    position: relative;
+    top: 80px;
+    width: 360px;
+    height: 520px;
+    overflow: hidden;
+
+}
+.about #about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about #about-text h2{
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: lightgreen;
+}
+.about #about-text p{
+    padding: 9px 18px;
+    background: pink;
+}
+.skills {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+
+}
+.skills #exhibition{
+    height: 60vh;
+    width: 300px;
+    position: relative;
+    top: 20%;
+    background: #F6C472;
+}
+.skills .text{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    width:540px;
+    position: relative;
+    background: #F6C472;
+}
+.skills .text #experience{}
+.skills .text #details{}
+.skills .button #more-skills{
+
+}
+.projects{
+    width: 100vw;
+    height: 100vh;
 }
