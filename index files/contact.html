@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Cyberpunk Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-mode">
+    <div class="noise-overlay"></div>
+    
+    <header>
+        <div class="logo">
+            <div class="logo-text">CYBER_<span class="highlight">DEV</span></div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <div class="toggle-switch">
+                    <input type="checkbox" id="theme-switch">
+                    <label for="theme-switch"></label>
+                </div>
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <div class="section-header">
+            <h1 class="glitch-text" data-text="CONNECT_">CONNECT_</h1>
+            <div class="header-line"></div>
+        </div>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2>Let's <span class="highlight">Collaborate</span></h2>
+                <p>Ready to discuss your next project or have questions? Reach out through any of these channels:</p>
+                
+                <div class="contact-card">
+                    <div class="hexagon-bg"></div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="icon-container">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>your.email@example.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="icon-container">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone</h3>
+                                <p>+1 (123) 456-7890</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="icon-container">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Location</h3>
+                                <p>Neo Tokyo, Cyberpunk District</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <h3>Find me on the <span class="highlight">Grid</span></h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <div class="form-header">
+                    <div class="circuit-lines"></div>
+                    <h2>Send a <span class="highlight">Message</span></h2>
+                    <div class="circuit-lines"></div>
+                </div>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <div class="input-container">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Name</label>
+                            <div class="input-border"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="input-container">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                            <div class="input-border"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="input-container">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                            <div class="input-border"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="input-container textarea-container">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Message</label>
+                            <div class="input-border"></div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="cyber-button">
+                        <span class="button-text">TRANSMIT</span>
+                        <div class="button-glitch"></div>
+                    </button>
+                </form>
+                
+                <div id="form-success" class="form-message success-message">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Message transmitted successfully!</p>
+                </div>
+                
+                <div id="form-error" class="form-message error-message">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>Transmission failed. Please try again.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">CYBER_<span class="highlight">DEV</span></div>
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CYBER_<span class="highlight">DEV</span>. All rights reserved.</p>
+            <div class="footer-line"></div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact form validation and submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && subject && message) {
+                // In a real application, you would send the form data to a server here
+                // For demo purposes, we'll just show the success message
+                document.getElementById('form-success').style.display = 'flex';
+                
+                // Hide success message after 3 seconds
+                setTimeout(() => {
+                    document.getElementById('form-success').style.display = 'none';
+                    document.getElementById('contact-form').reset();
+                }, 3000);
+            } else {
+                document.getElementById('form-error').style.display = 'flex';
+                
+                // Hide error message after 3 seconds
+                setTimeout(() => {
+                    document.getElementById('form-error').style.display = 'none';
+                }, 3000);
+            }
+        });
+        
+        // Add active class to input containers when focused
+        const inputs = document.querySelectorAll('.input-container input, .input-container textarea');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.classList.add('active');
+            });
+            
+            input.addEventListener('blur', () => {
+                if (input.value === '') {
+                    input.parentElement.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
