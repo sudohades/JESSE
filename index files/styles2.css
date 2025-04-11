@@ -133,8 +133,8 @@ a:hover {
   z-index: 1000;
   transition: all 0.3s ease;
   width: 100%;
-  border-bottom-left-radius: 25%;
-  border-bottom-right-radius: 25%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
   overflow: hidden;
 }
 
@@ -153,21 +153,22 @@ a:hover {
 .header-bg::after {
   content: '';
   position: absolute;
-  bottom: -15px;
+  bottom: -10px;
   left: -15px;
   right: -15px;
-  height: 30px;
-  background: var(--accent-yellow);
-  filter: blur(15px);
-  opacity: 0.7;
+  height: 20px;
+  background: var(--accent-blue);
+  filter: blur(10px);
+  opacity: 0.8;
   z-index: -1;
   transition: all 0.3s;
-  border-radius: 50%;
+  box-shadow: 0 0 20px var(--accent-blue);
 }
 
 [data-theme="light"] .header-bg::after {
-  background: #5a0b8a;
-  opacity: 0.5;
+  background: var(--accent-pink);
+  box-shadow: 0 0 20px var(--accent-pink);
+  opacity: 0.6;
 }
 
 .logo {
