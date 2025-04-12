@@ -123,6 +123,10 @@ a:hover {
 
 /* Header & Navigation */
 .header {
+  position: sticky; /* Ensures the header sticks to the top */
+  top: 0; /* Defines the sticky position */
+  z-index: 1000; /* Keeps the header above other elements */
+  background: var(--primary-bg);
   padding: 20px 0 20px 30px;
   margin: 0;
   display: flex;
@@ -136,6 +140,28 @@ a:hover {
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
   overflow: hidden;
+
+    background: var(--secondary-bg);
+    border-bottom: 2px solid var(--accent-blue);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--accent-yellow);
+  filter: blur(10px);
+  opacity: 0.7;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+[data-theme="light"] .header::after {
+  background: #5a0b8a;
+  opacity: 0.5;
 }
 
 .header-bg {
@@ -641,12 +667,12 @@ nav ul li a:hover::before {
     rgba(255, 255, 255, 0.5) 50%, 
     transparent 60%, 
     transparent 100%);
-  animation: skill-shine 2s infinite;
+  animation: skill-shine 4s infinite;
 }
 
 @keyframes skill-shine {
   0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
+  100% { transform: translateX(200%); }
 }
 
 .certifications {
@@ -828,6 +854,7 @@ nav ul li a:hover::before {
 }
 
 .featured-project::after {
+  box-sizing: border-box;
   content: 'FEATURED';
   position: absolute;
   top: 10px;
@@ -838,6 +865,7 @@ nav ul li a:hover::before {
   font-size: 12px;
   font-weight: bold;
   letter-spacing: 1px;
+  border-radius: 8%;
 }
 
 .featured-image {
