@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoPulse Music - Now Playing</title>
+    
+    <link rel="stylesheet" href="neopulse-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <header class="header">
+            <h1 id="site-title">NeoPulse Music</h1>
+            <nav>
+                <a href="neo-pulse.html" class="nav-link">Home</a>
+                <a href="player-page.html" class="nav-link active">Now Playing</a>
+                <a href="create-playlist-page.html" class="nav-link">Create Playlist</a>
+            </nav>
+        </header>
+        
+        <main class="player-container">
+            <div class="album-art">
+                <img src="/api/placeholder/300/300" alt="Album Artwork" id="album-artwork">
+            </div>
+            
+            <div class="track-info">
+                <h2 class="track-title" id="track-title">Neon Dreams</h2>
+                <p class="track-artist" id="track-artist">Cyber Synthwave</p>
+                <p class="track-album" id="track-album">Future Nostalgia</p>
+            </div>
+            
+            <div class="controls">
+                <button class="control-btn" id="prev-btn">◀◀</button>
+                <button class="control-btn play-pause" id="play-pause-btn">▶</button>
+                <button class="control-btn" id="next-btn">▶▶</button>
+            </div>
+            
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress" id="progress-bar"></div>
+                </div>
+                <div class="time-info">
+                    <span id="current-time">1:24</span>
+                    <span id="total-time">4:05</span>
+                </div>
+            </div>
+            
+            <div class="volume-container">
+                <span class="volume-icon">🔊</span>
+                <input type="range" min="0" max="100" value="80" class="volume-slider" id="volume-control">
+            </div>
+            
+            <div class="playlist-queue">
+                <h3>Up Next</h3>
+                <div class="queue-list" id="queue-list">
+                    <div class="queue-item active">
+                        <div class="queue-number">1</div>
+                        <div class="queue-info">
+                            <h4 class="queue-title">Neon Dreams</h4>
+                            <p class="queue-artist">Cyber Synthwave</p>
+                        </div>
+                        <div class="queue-duration">4:05</div>
+                    </div>
+                    
+                    <div class="queue-item">
+                        <div class="queue-number">2</div>
+                        <div class="queue-info">
+                            <h4 class="queue-title">Digital Horizon</h4>
+                            <p class="queue-artist">Cyber Synthwave</p>
+                        </div>
+                        <div class="queue-duration">3:45</div>
+                    </div>
+                    
+                    <div class="queue-item">
+                        <div class="queue-number">3</div>
+                        <div class="queue-info">
+                            <h4 class="queue-title">Retro Future</h4>
+                            <p class="queue-artist">Cyber Synthwave</p>
+                        </div>
+                        <div class="queue-duration">5:12</div>
+                    </div>
+                    
+                    <div class="queue-item">
+                        <div class="queue-number">4</div>
+                        <div class="queue-info">
+                            <h4 class="queue-title">Electric Dreams</h4>
+                            <p class="queue-artist">Cyber Synthwave</p>
+                        </div>
+                        <div class="queue-duration">3:58</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="animations.js"></script>
+</body>
+</html>

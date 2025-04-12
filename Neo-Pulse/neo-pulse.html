@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoPulse Music - Home</title>
+    <link rel="stylesheet" href="neopulse-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="site-title">NeoPulse Music</h1>
+            <nav>
+                <a href="neo-pulse.html" class="nav-link active">Home</a>
+                <a href="player-page.html" class="nav-link">Now Playing</a>
+                <a href="create-playlist-page.html" class="nav-link">Create Playlist</a>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="playlists-header">
+                <h2>Your Playlists</h2>
+                <a href="create-playlist.html"><button class="create-btn">+ Create New Playlist</button></a>
+            </div>
+            
+            <div class="playlists-container" id="playlists-grid">
+                <!-- Sample playlists - these can be populated dynamically later -->
+                <div class="playlist-card">
+                    <div class="playlist-thumbnail">
+                        <img src="/api/placeholder/250/150" alt="Electronic Beats">
+                    </div>
+                    <h3 class="playlist-title">Electronic Beats</h3>
+                    <p class="playlist-info">15 tracks • 1hr 23min</p>
+                </div>
+                
+                <div class="playlist-card">
+                    <div class="playlist-thumbnail">
+                        <img src="/api/placeholder/250/150" alt="Chill Vibes">
+                    </div>
+                    <h3 class="playlist-title">Chill Vibes</h3>
+                    <p class="playlist-info">22 tracks • 1hr 47min</p>
+                </div>
+                
+                <div class="playlist-card">
+                    <div class="playlist-thumbnail">
+                        <img src="/api/placeholder/250/150" alt="Workout Mix">
+                    </div>
+                    <h3 class="playlist-title">Workout Mix</h3>
+                    <p class="playlist-info">18 tracks • 1hr 12min</p>
+                </div>
+                
+                <div class="playlist-card">
+                    <div class="playlist-thumbnail">
+                        <img src="/api/placeholder/250/150" alt="Study Focus">
+                    </div>
+                    <h3 class="playlist-title">Study Focus</h3>
+                    <p class="playlist-info">30 tracks • 2hr 15min</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="animations.js"></script>
+</body>
+</html>

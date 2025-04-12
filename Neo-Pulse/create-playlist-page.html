@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoPulse Music - Create Playlist</title>
+    <link rel="stylesheet" href="neopulse-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="site-title">NeoPulse Music</h1>
+            <nav>
+                <a href="neo-pulse.html" class="nav-link">Home</a>
+                <a href="player-page.html" class="nav-link">Now Playing</a>
+                <a href="create-playlist-page.html" class="nav-link active">Create Playlist</a>
+            </nav>
+        </header>
+        
+        <main>
+            <h2>Create New Playlist</h2>
+            
+            <div class="create-container">
+                <div class="playlist-form">
+                    <div class="form-group">
+                        <label class="form-label" for="playlist-name">Playlist Name</label>
+                        <input type="text" id="playlist-name" class="form-input" placeholder="Enter playlist name...">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="playlist-description">Description</label>
+                        <textarea id="playlist-description" class="form-textarea" placeholder="Enter playlist description..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Playlist Cover</label>
+                        <div class="upload-area" id="cover-upload">
+                            <div class="upload-icon">⬆️</div>
+                            <p>Drop image here or click to upload</p>
+                        </div>
+                    </div>
+                    
+                    <div class="selected-tracks">
+                        <h3>Selected Tracks</h3>
+                        <div class="track-list" id="selected-tracks-list">
+                            <!-- Selected tracks will appear here -->
+                            <div class="track-item">
+                                <div class="track-thumbnail">
+                                    <img src="/api/placeholder/50/50" alt="Track thumbnail">
+                                </div>
+                                <div class="track-info">
+                                    <h4 class="track-title">Cybernetic Pulse</h4>
+                                    <p class="track-artist">Neural Beats</p>
+                                </div>
+                                <div class="track-duration">3:45</div>
+                                <button class="add-remove-btn">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <button class="btn btn-secondary" id="cancel-btn">Cancel</button>
+                        <button class="btn btn-primary" id="create-btn">Create Playlist</button>
+                    </div>
+                </div>
+                
+                <div class="search-container">
+                    <h3>Add Tracks</h3>
+                    <div class="search-box">
+                        <input type="text" class="search-input" id="track-search" placeholder="Search for tracks...">
+                        <button class="search-btn" id="search-btn">Search</button>
+                    </div>
+                    
+                    <div class="track-list" id="search-results">
+                        <!-- Search results will appear here -->
+                        <div class="track-item">
+                            <div class="track-thumbnail">
+                                <img src="/api/placeholder/50/50" alt="Track thumbnail">
+                            </div>
+                            <div class="track-info">
+                                <h4 class="track-title">Neon Dreams</h4>
+                                <p class="track-artist">Cyber Synthwave</p>
+                            </div>
+                            <div class="track-duration">4:05</div>
+                            <button class="add-remove-btn">+</button>
+                        </div>
+                        
+                        <div class="track-item">
+                            <div class="track-thumbnail">
+                                <img src="/api/placeholder/50/50" alt="Track thumbnail">
+                            </div>
+                            <div class="track-info">
+                                <h4 class="track-title">Digital Horizon</h4>
+                                <p class="track-artist">Cyber Synthwave</p>
+                            </div>
+                            <div class="track-duration">3:45</div>
+                            <button class="add-remove-btn">+</button>
+                        </div>
+                        
+                        <div class="track-item">
+                            <div class="track-thumbnail">
+                                <img src="/api/placeholder/50/50" alt="Track thumbnail">
+                            </div>
+                            <div class="track-info">
+                                <h4 class="track-title">Neural Network</h4>
+                                <p class="track-artist">Data Flow</p>
+                            </div>
+                            <div class="track-duration">5:18</div>
+                            <button class="add-remove-btn">+</button>
+                        </div>
+                        
+                        <div class="track-item">
+                            <div class="track-thumbnail">
+                                <img src="/api/placeholder/50/50" alt="Track thumbnail">
+                            </div>
+                            <div class="track-info">
+                                <h4 class="track-title">Midnight Protocol</h4>
+                                <p class="track-artist">Cyber Security</p>
+                            </div>
+                            <div class="track-duration">4:22</div>
+                            <button class="add-remove-btn">+</button>
+                        </div>
+                        
+                        <div class="track-item">
+                            <div class="track-thumbnail">
+                                <img src="/api/placeholder/50/50" alt="Track thumbnail">
+                            </div>
+                            <div class="track-info">
+                                <h4 class="track-title">Quantum Beats</h4>
+                                <p class="track-artist">Future Sound</p>
+                            </div>
+                            <div class="track-duration">3:37</div>
+                            <button class="add-remove-btn">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    
+    <script src="animations.js"></script>
+</body>
+</html>

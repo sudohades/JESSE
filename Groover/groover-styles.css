@@ -1,10 +1,10 @@
 /* Golden Brown Theme */
 :root {
-  --primary: #D4A76A;
-  --secondary: #B78D65;
-  --accent: #E6C229;
-  --dark: #5C3A21;
-  --light: #F5E6C8;
+  --primary: #FF7F51;
+  --secondary: #4F000B;
+  --accent: #FFD65C;
+  --dark: #0C1713;
+  --light: #E2DBE6;
 }
 
 body {
@@ -15,10 +15,19 @@ body {
   padding: 0;
 }
 
-header {
+header .header {
   background-color: var(--primary);
-  padding: 1rem;
+  padding: 0.5rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 100%;
+  position: static; /* Change from fixed to static */
+}
+
+nav {
+  display: flex; /* Use flexbox for nav items */
+  justify-content: space-around; /* Spread out nav items */
+  margin-top: 1rem; /* Add some space above the nav */
 }
 
 nav a {
@@ -30,7 +39,7 @@ nav a {
 
 nav a:hover {
   color: var(--accent);
-  transform: translateY(-2px);
+  transform: translateY(-12px);
 }
 
 button, .btn {
@@ -44,8 +53,9 @@ button, .btn {
 }
 
 button:hover, .btn:hover {
+  transform: translateY(-6px);
   background-color: var(--accent);
-  transform: scale(1.05);
+  transform: scale(2);
 }
 
 .card {
@@ -55,7 +65,7 @@ button:hover, .btn:hover {
   transition: all 0.3s ease;
 }
 
-.card:hover {
+card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
