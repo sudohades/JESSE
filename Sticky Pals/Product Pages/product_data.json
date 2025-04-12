@@ -1,0 +1,27 @@
+{
+    "name": "Product 1",
+    "category": "Premium Collection",
+    "slogan": "Timeless elegance for the modern connoisseur",
+    "tagline": "Where ancient artistry meets modern luxury",
+    "price": "$1,299",
+    "materials": "Premium grade marble, 24k gold accents",
+    "dimensions": "H: 45cm, W: 30cm, D: 22cm",
+    "weight": "3.2 kg",
+    "origin": "Handcrafted in Rome, Italy",
+    "description": "Inspired by classical Roman aesthetics, Product 1 exemplifies the perfect balance between historical grandeur and contemporary functionality. Each piece is meticulously crafted by master artisans, ensuring unparalleled quality and attention to detail. The elegant design serves as both a functional item and a statement piece for discerning collectors.",
+    "features": [
+      {
+        "title": "Timeless Design",
+        "description": "Classical aesthetics blended with contemporary elements"
+      },
+      {
+        "title": "Artisan Crafted",
+        "description": "Handmade by master artisans with decades of experience"
+      },
+      {
+        "title": "Exclusive Materials",
+        "description": "Only the finest materials sourced from around the world"
+      }
+    ],
+    "imageUrl": "product1.jpg"
+  }
