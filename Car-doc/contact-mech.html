@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Mechanic | AutoDiagnose</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <h1 class="logo">AutoDiagnose</h1>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="car-doc-home.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="diagnose-car.html" class="nav-link">Diagnose</a></li>
+                <li class="nav-item"><a href="contact-mech.html" class="nav-link active">Find a Mechanic</a></li>
+                <li class="nav-item"><a href="sign-up-page.html" class="nav-link">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-content">
+        <section class="mechanic-search-section">
+            <h2 class="section-title">Find Mechanics Near You</h2>
+            <form id="location-form" class="location-form">
+                <div class="form-group">
+                    <label for="zip-code">Enter Your ZIP Code:</label>
+                    <input type="text" id="zip-code" name="zipCode" class="form-input" placeholder="e.g., 10001">
+                </div>
+                <div class="form-group">
+                    <label for="search-radius">Search Radius (miles):</label>
+                    <select id="search-radius" name="radius" class="form-select">
+                        <option value="5">5 miles</option>
+                        <option value="10" selected>10 miles</option>
+                        <option value="25">25 miles</option>
+                        <option value="50">50 miles</option>
+                    </select>
+                </div>
+                <div class="form-group specialties">
+                    <fieldset>
+                        <legend>Specialties (Optional):</legend>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="specialty-brake" name="specialty" value="brakes">
+                            <label for="specialty-brake">Brakes</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="specialty-transmission" name="specialty" value="transmission">
+                            <label for="specialty-transmission">Transmission</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="specialty-electrical" name="specialty" value="electrical">
+                            <label for="specialty-electrical">Electrical</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="specialty-engine" name="specialty" value="engine">
+                            <label for="specialty-engine">Engine</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <button type="submit" id="find-mechanics-btn" class="search-button">Find Mechanics</button>
+            </form>
+        </section>
+
+        <section class="mechanic-results-section" id="mechanic-results">
+            <h2 class="section-title">Available Mechanics</h2>
+            <div class="results-container" id="results-container">
+                <!-- Mechanic results will be displayed here -->
+                <p class="placeholder-text">Enter your location to see mechanics in your area.</p>
+            </div>
+        </section>
+
+        <section class="direct-contact-section">
+            <h2 class="section-title">Contact Us Directly</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="contact-name">Your Name:</label>
+                    <input type="text" id="contact-name" name="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email Address:</label>
+                    <input type="email" id="contact-email" name="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-subject">Subject:</label>
+                    <input type="text" id="contact-subject" name="subject" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">Message:</label>
+                    <textarea id="contact-message" name="message" class="form-textarea" rows="5" required></textarea>
+                </div>
+                <button type="submit" id="submit-contact" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2025 AutoDiagnose</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms of Service</a>
+                <a href="contact.html" class="footer-link">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

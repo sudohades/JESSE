@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Diagnosis | AutoDiagnose</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <h1 class="logo">AutoDiagnose</h1>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="car-doc-home.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="diagnose-car.html" class="nav-link active">Diagnose</a></li>
+                <li class="nav-item"><a href="contact-mech.html" class="nav-link">Find a Mechanic</a></li>
+                <li class="nav-item"><a href="sign-up-page.html" class="nav-link">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="diagnose-content">
+        <section class="vehicle-info-section">
+            <h2 class="section-title">Vehicle Information</h2>
+            <form id="vehicle-form" class="vehicle-form">
+                <div class="form-group">
+                    <label for="vehicle-make">Make:</label>
+                    <input type="text" id="vehicle-make" name="make" class="form-input" placeholder="e.g., Toyota">
+                </div>
+                <div class="form-group">
+                    <label for="vehicle-model">Model:</label>
+                    <input type="text" id="vehicle-model" name="model" class="form-input" placeholder="e.g., Corolla">
+                </div>
+                <div class="form-group">
+                    <label for="vehicle-year">Year:</label>
+                    <input type="number" id="vehicle-year" name="year" class="form-input" placeholder="e.g., 2020">
+                </div>
+                <div class="form-group">
+                    <label for="vehicle-mileage">Mileage:</label>
+                    <input type="number" id="vehicle-mileage" name="mileage" class="form-input" placeholder="e.g., 50000">
+                </div>
+            </form>
+        </section>
+
+        <section class="diagnosis-section">
+            <h2 class="section-title">Describe Your Issue</h2>
+            <div class="chat-container" id="diagnosis-chat">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message system-message">
+                        <p>Welcome to AutoDiagnose! Please describe the issue you're experiencing with your vehicle.</p>
+                    </div>
+                    <!-- Chat messages will be appended here -->
+                </div>
+                <div class="chat-input-container">
+                    <textarea id="chat-input" class="chat-input" placeholder="Describe the symptoms (e.g., 'Car makes grinding noise when braking')"></textarea>
+                    <button id="send-message" class="send-button">Send</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="diagnosis-results-section" id="diagnosis-results">
+            <h2 class="section-title">Diagnosis Results</h2>
+            <div class="result-container" id="result-container">
+                <!-- Diagnosis results will be displayed here -->
+                <p class="placeholder-text">Your diagnosis results will appear here after completing the chat above.</p>
+            </div>
+            <div class="action-buttons">
+                <button id="save-diagnosis" class="action-button">Save Diagnosis</button>
+                <button id="find-mechanic" class="action-button">Find a Mechanic</button>
+                <button id="get-cost-estimate" class="action-button">Get Cost Estimate</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2025 AutoDiagnose</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms of Service</a>
+                <a href="contact.html" class="footer-link">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

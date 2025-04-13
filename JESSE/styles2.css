@@ -854,6 +854,7 @@ nav ul li a:hover::before {
 }
 
 .featured-project::after {
+  opacity: 65%;
   box-sizing: border-box;
   content: 'FEATURED';
   position: absolute;

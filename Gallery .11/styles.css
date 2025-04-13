@@ -1,3 +1,4 @@
+/* This is the style sheet for the gallery website*/
 /* ===== GLOBAL STYLES ===== */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap');
 
@@ -597,8 +598,6 @@ input:focus, textarea:focus {
     height: 60vh;
   }
 }
-/* Add these lines to your existing styles.css file */
-
 /* Dark Mode Toggle Button */
 #dark-mode-toggle {
     position: fixed;
@@ -654,6 +653,9 @@ body.dark-mode textarea {
     background-color: #2a2a2a;
     color: var(--color-dark);
 }
+body.dark-mode .hero-content{
+  color: var(--color-secondary)
+}
 
 body.dark-mode .artist-statement {
     background-color: rgba(93, 45, 0, 0.2);
@@ -666,6 +668,9 @@ body.dark-mode .artist-details {
 body.dark-mode .additional-contact {
     background-color: rgba(249, 41, 95, 0.1);
 }
+body.dark-mode .contact-hero-content{
+   color: var(--color-secondary);
+}
 
 body.dark-mode #dark-mode-toggle {
     background: var(--color-dark);
@@ -674,6 +679,9 @@ body.dark-mode #dark-mode-toggle {
 
 body.dark-mode .footer {
     background-color: #000;
+}
+body.dark-mode .footer .copyright-details{
+  color: var(--color-dark)
 }
 
 body.dark-mode a {
