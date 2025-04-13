@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product 1 - Gig Corp</title>
+    <link rel="stylesheet" href="product1_alt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon"></div>
+            </div>
+            <nav class="navigation">
+                <a href="#" class="nav-item">Home</a>
+                <a href="#" class="nav-item">Cart</a>
+                <a href="#" class="nav-item">Checkout</a>
+                <a href="#" class="nav-item">Back</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <div class="product-info">
+                    <span class="product-category" id="productCategory">Premium Collection</span>
+                    <h1 class="product-title" class="product-title js-scroll from-left" id="productName">Product 1</h1>
+                    <p class="product-tagline" id="productTagline">Where ancient artistry meets modern luxury</p>
+                    <div class="product-pricing">
+                        <span class="product-price" id="productPrice">$1,299</span>
+                        <button class="cta-button">
+                            <span>Add to Cart</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-showcase">
+                    <div class="product-image" id="productImage"></div>
+                    <div class="geometric-shape"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-details">
+            <div class="details-header">
+                <div class="line"></div>
+                <h2>Technical Specifications</h2>
+                <div class="line"></div>
+            </div>
+            <div class="specs-container">
+                <div class="spec-column">
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <i class="fas fa-ruler-combined"></i>
+                        </div>
+                        <div class="spec-content">
+                            <h3>Dimensions</h3>
+                            <p id="productDimensions">H: 45cm, W: 30cm, D: 22cm</p>
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <i class="fas fa-weight-hanging"></i>
+                        </div>
+                        <div class="spec-content">
+                            <h3>Weight</h3>
+                            <p id="productWeight">3.2 kg</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="spec-column">
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="spec-content">
+                            <h3>Materials</h3>
+                            <p id="productMaterials">Premium grade marble, 24k gold accents</p>
+                        </div>
+                    </div>
+                    <div class="spec-item">
+                        <div class="spec-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="spec-content">
+                            <h3>Origin</h3>
+                            <p id="productOrigin">Handcrafted in Rome, Italy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-description">
+                <p id="productDescription">Inspired by classical Roman aesthetics, Product 1 exemplifies the perfect balance between historical grandeur and contemporary functionality. Each piece is meticulously crafted by master artisans, ensuring unparalleled quality and attention to detail. The elegant design serves as both a functional item and a statement piece for discerning collectors.</p>
+            </div>
+            <div class="unique-features">
+                <div class="feature">
+                    <span class="feature-number">01</span>
+                    <h3 id="feature1Title">Timeless Design</h3>
+                    <p id="feature1Description">Classical aesthetics blended with contemporary elements</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-number">02</span>
+                    <h3 id="feature2Title">Artisan Crafted</h3>
+                    <p id="feature2Description">Handmade by master artisans with decades of experience</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-number">03</span>
+                    <h3 id="feature3Title">Exclusive Materials</h3>
+                    <p id="feature3Description">Only the finest materials sourced from around the world</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">Gig Corp</div>
+                <div class="footer-copyright">© 2025. All rights reserved.</div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Script to load product data from JSON
+        fetch('./product-data.json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('productCategory').textContent = data.category;
+                document.getElementById('productName').textContent = data.name;
+                document.getElementById('productTagline').textContent = data.tagline;
+                document.getElementById('productPrice').textContent = data.price;
+                document.getElementById('productDimensions').textContent = data.dimensions;
+                document.getElementById('productWeight').textContent = data.weight;
+                document.getElementById('productMaterials').textContent = data.materials;
+                document.getElementById('productOrigin').textContent = data.origin;
+                document.getElementById('productDescription').textContent = data.description;
+                document.getElementById('feature1Title').textContent = data.features[0].title;
+                document.getElementById('feature1Description').textContent = data.features[0].description;
+                document.getElementById('feature2Title').textContent = data.features[1].title;
+                document.getElementById('feature2Description').textContent = data.features[1].description;
+                document.getElementById('feature3Title').textContent = data.features[2].title;
+                document.getElementById('feature3Description').textContent = data.features[2].description;
+                // Image would be set via background-image in CSS
+            });
+    </script>
+    <script src="/Sticky Pals/Product Pages/animations.js"></script>
+</body>
+</html>

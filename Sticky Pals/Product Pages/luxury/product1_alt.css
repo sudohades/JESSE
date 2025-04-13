@@ -1,0 +1,510 @@
+/* Design 2 - Roman Luxury Theme */
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Cardo:wght@400;700&family=Cormorant:wght@300;400;600;700&display=swap');
+
+:root {
+    --gold: #d4af37;
+    --gold-light: #e9d08e;
+    --gold-dark: #b8860b;
+    --black: #0a0a0a;
+    --black-light: #1e1e1e;
+    --white: #ffffff;
+    --off-white: #f8f8f8;
+    --gray: #888888;
+    --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cardo', serif;
+    background-color: var(--black);
+    color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: var(--gold);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transition: var(--transition);
+}
+
+.logo-icon:hover {
+    transform: rotate(30deg);
+}
+
+.navigation {
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-item {
+    font-family: 'Forum', cursive;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: var(--transition);
+    position: relative;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--gold);
+    transition: var(--transition);
+}
+
+.nav-item:hover {
+    color: var(--gold);
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.hero-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.product-info {
+    flex: 0 0 40%;
+    padding-top: 35vh;
+}
+
+.product-category {
+    display: inline-block;
+    font-family: 'Forum', cursive;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 3rem;
+}
+
+.product-category::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 2rem;
+    height: 1px;
+    background-color: var(--gold);
+}
+
+.product-title {
+    font-family: 'Forum', cursive;
+    font-size: 5rem;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.product-tagline {
+    font-family: 'Cormorant', serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 3rem;
+}
+
+.product-pricing {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.product-price {
+    font-family: 'Forum', cursive;
+    font-size: 2.5rem;
+    color: var(--gold);
+}
+
+.cta-button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 0.8rem 2rem;
+    font-family: 'Forum', cursive;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.cta-button:hover {
+    background-color: var(--gold);
+    color: var(--black);
+}
+
+.cta-button i {
+    transition: var(--transition);
+}
+
+.cta-button:hover i {
+    transform: translateX(5px);
+}
+
+.product-showcase {
+    flex: 0 0 50%;
+    position: relative;
+    height: 80vh;
+    padding-top: 35vh;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://via.placeholder.com/600x800');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+}
+
+.geometric-shape {
+    position: absolute;
+    top: 25%;
+    right: -5%;
+    width: 60%;
+    height: 60%;
+    background-color: var(--gold);
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+/* Product Details Section */
+.product-details {
+    background-color: var(--black-light);
+    padding: 6rem 10%;
+}
+
+.details-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.details-header h2 {
+    font-family: 'Forum', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0 2rem;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--gold);
+    opacity: 0.3;
+    max-width: 200px;
+}
+
+.specs-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.spec-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.spec-item {
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: var(--transition);
+}
+
+.spec-item:hover {
+    border-color: var(--gold);
+    transform: translateY(-5px);
+}
+
+.spec-icon {
+    color: var(--gold);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+}
+
+.spec-content h3 {
+    font-family: 'Forum', cursive;
+    color: var(--gold);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.spec-content p {
+    color: var(--gray);
+    font-size: 1.1rem;
+}
+
+.product-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 5rem;
+    padding: 3rem;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    font-family: 'Cormorant', serif;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: var(--white);
+    font-weight: 300;
+}
+
+.unique-features {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.feature {
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.feature-number {
+    display: block;
+    font-family: 'Forum', cursive;
+    font-size: 3rem;
+    color: rgba(212, 175, 55, 0.2);
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    font-family: 'Forum', cursive;
+    color: var(--gold);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.feature p {
+    color: var(--gray);
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--black);
+    padding: 1.5rem 10%;
+    margin-top: auto;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-family: 'Forum', cursive;
+    color: var(--gold);
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.footer-copyright {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.fade-in-delay-1 {
+    animation-delay: 0.2s;
+}
+
+.fade-in-delay-2 {
+    animation-delay: 0.4s;
+}
+
+.fade-in-delay-3 {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .product-title {
+        font-size: 4rem;
+    }
+    
+    .navigation {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-content {
+        flex-direction: column;
+    }
+    
+    .product-info, .product-showcase {
+        flex: 0 0 100%;
+        padding-top: 120px;
+    }
+    
+    .product-showcase {
+        height: 60vh;
+        margin-top: 3rem;
+    }
+    
+    .specs-container {
+        flex-direction: column;
+    }
+    
+    .unique-features {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem 5%;
+    }
+    
+    .navigation {
+        gap: 1rem;
+    }
+    
+    .nav-item {
+        font-size: 0.9rem;
+    }
+    
+    .hero {
+        padding: 0 5%;
+    }
+    
+    .product-title {
+        font-size: 3rem;
+    }
+    
+    .product-details {
+        padding: 3rem 5%;
+    }
+    
+    .product-description {
+        font-size: 1.2rem;
+        padding: 2rem 0;
+    }
+    
+    .feature {
+        padding: 1rem;
+    }
+}
+
+/* Hover Effects */
+.product-image {
+    transition: var(--transition);
+}
+
+.product-image:hover {
+    transform: scale(1.02);
+}
+
+/* JavaScript Animation Hooks */
+.js-scroll {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.js-scroll.scrolled {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.js-scroll--up {
+    transform: translateY(50px); 
+}
+
+.js-scroll--left {
+    transform: translateX(-50px);
+}
+
+.js-scroll--right {
+    transform: translateX(50px);
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | AutoDiagnose</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <h1 class="logo">AutoDiagnose</h1>
+        </div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="car-doc-home.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="diagnose-car.html" class="nav-link">Diagnose</a></li>
+                <li class="nav-item"><a href="contact-mech.html" class="nav-link">Find a Mechanic</a></li>
+                <li class="nav-item"><a href="sign-up-page.html" class="nav-link active">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="signup-content">
+        <section class="signup-section">
+            <h2 class="section-title">Create Your Account</h2>
+            <div class="form-container">
+                <div class="benefits-container">
+                    <h3>Benefits of an Account</h3>
+                    <ul class="benefits-list">
+                        <li class="benefit-item">Save your vehicle information</li>
+                        <li class="benefit-item">Track diagnosis history</li>
+                        <li class="benefit-item">Get personalized maintenance reminders</li>
+                        <li class="benefit-item">Connect with trusted mechanics</li>
+                    </ul>
+                </div>
+                
+                <form id="signup-form" class="signup-form">
+                    <div class="form-group">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="firstName" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="lastName" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" class="form-input" required>
+                        <p class="password-requirements">Must be at least 8 characters with a number and special character</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirmPassword" class="form-input" required>
+                    </div>
+                    
+                    <h3 class="vehicle-section-title">Vehicle Information (Optional)</h3>
+                    
+                    <div class="form-group">
+                        <label for="vehicle-make-signup">Make:</label>
+                        <input type="text" id="vehicle-make-signup" name="vehicleMake" class="form-input" placeholder="e.g., Toyota">
+                    </div>
+                    <div class="form-group">
+                        <label for="vehicle-model-signup">Model:</label>
+                        <input type="text" id="vehicle-model-signup" name="vehicleModel" class="form-input" placeholder="e.g., Corolla">
+                    </div>
+                    <div class="form-group">
+                        <label for="vehicle-year-signup">Year:</label>
+                        <input type="number" id="vehicle-year-signup" name="vehicleYear" class="form-input" placeholder="e.g., 2020">
+                    </div>
+                    
+                    <div class="form-group checkbox-container">
+                        <input type="checkbox" id="terms-agreement" name="termsAgreement" required>
+                        <label for="terms-agreement">I agree to the <a href="#" class="terms-link">Terms of Service</a> and <a href="#" class="privacy-link">Privacy Policy</a></label>
+                    </div>
+                    
+                    <div class="form-group checkbox-container">
+                        <input type="checkbox" id="marketing-consent" name="marketingConsent">
+                        <label for="marketing-consent">I would like to receive maintenance tips and special offers</label>
+                    </div>
+                    
+                    <button type="submit" id="create-account-btn" class="submit-button">Create Account</button>
+                </form>
+            </div>
+            
+            <div class="login-option">
+                <p>Already have an account? <a href="#" id="login-link" class="login-link">Log In</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p class="copyright">&copy; 2025 AutoDiagnose</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms of Service</a>
+                <a href="contact.html" class="footer-link">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
