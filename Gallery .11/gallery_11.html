@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio | Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Artist Name</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="gallery_home.html">Home</a></li>
+                <li><a href="gallery_11.html" class="active">Gallery</a></li>
+                <li><a href="contact_page.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery-intro">
+            <h2>Art Series & Collections</h2>
+            <p>Explore my various art series and collections, each centered around different themes and techniques.</p>
+        </section>
+
+        <section class="art-series" id="series1">
+            <h2 class="series-title">Abstract Emotions</h2>
+            <p class="series-description">A collection exploring the visual representation of human emotions through abstract forms and vibrant colors.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/400" alt="Abstract Emotion 1">
+                    <div class="item-overlay">
+                        <h3>"Ecstasy"</h3>
+                        <p>Acrylics on Canvas, 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/400" alt="Abstract Emotion 2">
+                    <div class="item-overlay">
+                        <h3>"Melancholy"</h3>
+                        <p>Acrylics on Canvas, 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/400" alt="Abstract Emotion 3">
+                    <div class="item-overlay">
+                        <h3>"Tranquility"</h3>
+                        <p>Mixed Media, 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/400" alt="Abstract Emotion 4">
+                    <div class="item-overlay">
+                        <h3>"Rage"</h3>
+                        <p>Oil on Canvas, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="art-series" id="series2">
+            <h2 class="series-title">Urban Landscapes</h2>
+            <p class="series-description">Reimagining city environments through an artistic lens, capturing the energy and rhythm of urban life.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/400" alt="Urban Landscape 1">
+                    <div class="item-overlay">
+                        <h3>"Downtown Dusk"</h3>
+                        <p>Digital Art, 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/400" alt="Urban Landscape 2">
+                    <div class="item-overlay">
+                        <h3>"Morning Rush"</h3>
+                        <p>Watercolor, 2023</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/400" alt="Urban Landscape 3">
+                    <div class="item-overlay">
+                        <h3>"Neon Nights"</h3>
+                        <p>Digital Art, 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/400" alt="Urban Landscape 4">
+                    <div class="item-overlay">
+                        <h3>"Urban Solitude"</h3>
+                        <p>Acrylic on Canvas, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="art-series" id="series3">
+            <h2 class="series-title">Nature's Patterns</h2>
+            <p class="series-description">Exploring the intricate patterns found in nature and their harmonious mathematical relationships.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/400" alt="Nature Pattern 1">
+                    <div class="item-overlay">
+                        <h3>"Fibonacci"</h3>
+                        <p>Mixed Media, 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/400" alt="Nature Pattern 2">
+                    <div class="item-overlay">
+                        <h3>"Crystalline"</h3>
+                        <p>Watercolor, 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/400" alt="Nature Pattern 3">
+                    <div class="item-overlay">
+                        <h3>"Fractals in Bloom"</h3>
+                        <p>Digital Art, 2023</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/400/400" alt="Nature Pattern 4">
+                    <div class="item-overlay">
+                        <h3>"Wave Forms"</h3>
+                        <p>Oil on Canvas, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" class="social-icon">Instagram</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">ArtStation</a>
+        </div>
+        <p>&copy; <span id="year">2025</span> Artist Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="darkmode.js"></script>
+</body>
+</html>

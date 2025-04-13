@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio | Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Artist Name</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="gallery_home.html">Home</a></li>
+                <li><a href="gallery_11.html">Gallery</a></li>
+                <li><a href="contact_page.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="contact-hero-content">
+                <h2>Get in Touch</h2>
+                <p>Interested in my work? Have questions about commissions or exhibitions? Let's connect!</p>
+            </div>
+        </section>
+
+        <section class="artist-info">
+            <div class="artist-photo">
+                <img src="/api/placeholder/500/500" alt="Artist Portrait">
+            </div>
+            <div class="artist-bio">
+                <h2>About the Artist</h2>
+                <p>Write a brief biography here. Include your artistic background, education, major influences, and your artistic journey so far. This helps potential clients and art enthusiasts understand your perspective and approach.</p>
+                <p>You can also mention any exhibitions, awards, or significant achievements in your artistic career. This builds credibility and helps visitors understand your professional standing.</p>
+                <div class="artist-details">
+                    <p><strong>Based in:</strong> City, Country</p>
+                    <p><strong>Specializing in:</strong> Medium(s) and Style(s)</p>
+                    <p><strong>Available for:</strong> Commissions, Exhibitions, Workshops, etc.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Contact Form</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="additional-contact">
+            <h2>Other Ways to Connect</h2>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>artist@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Social Media</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                        <a href="#" class="social-icon">ArtStation</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <h3>Representation</h3>
+                    <p>Gallery Name (if applicable)</p>
+                    <p>gallery@example.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" class="social-icon">Instagram</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">ArtStation</a>
+        </div>
+        <p>&copy; <span id="year">2025</span> Artist Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="darkmode.js"></script>
+</body>
+</html>

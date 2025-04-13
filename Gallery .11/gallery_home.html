@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio | Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>Artist Name</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="gallery_home.html" class="active">Home</a></li>
+                <li><a href="gallery_11.html">Gallery</a></li>
+                <li><a href="contact_page.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to My Artistic World</h2>
+                <p>Exploring color, form, and emotion through visual expression</p>
+            </div>
+        </section>
+
+        <section class="featured-works">
+            <h2>Featured Works</h2>
+            <div class="works-container">
+                <article class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="/api/placeholder/600/400" alt="Featured Artwork 1">
+                    </div>
+                    <div class="artwork-info">
+                        <h3>"Title of Artwork 1"</h3>
+                        <p>Medium, Year</p>
+                        <p class="artwork-description">A brief description of the artwork and the ideas behind it.</p>
+                    </div>
+                </article>
+
+                <article class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="/api/placeholder/600/400" alt="Featured Artwork 2">
+                    </div>
+                    <div class="artwork-info">
+                        <h3>"Title of Artwork 2"</h3>
+                        <p>Medium, Year</p>
+                        <p class="artwork-description">A brief description of the artwork and the ideas behind it.</p>
+                    </div>
+                </article>
+
+                <article class="artwork-card">
+                    <div class="artwork-image">
+                        <img src="/api/placeholder/600/400" alt="Featured Artwork 3">
+                    </div>
+                    <div class="artwork-info">
+                        <h3>"Title of Artwork 3"</h3>
+                        <p>Medium, Year</p>
+                        <p class="artwork-description">A brief description of the artwork and the ideas behind it.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="artist-statement">
+            <h2>Artist Statement</h2>
+            <div class="statement-content">
+                <p>This is a space for your artist statement. Describe your artistic approach, what inspires you, and what you aim to communicate through your art. This helps visitors connect with your work on a deeper level.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" class="social-icon">Instagram</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">ArtStation</a>
+        </div>
+        <p>&copy; <span id="year">2025</span> Artist Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="darkmode.js"></script>
+</body>
+</html>
