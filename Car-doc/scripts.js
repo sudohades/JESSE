@@ -270,4 +270,7 @@ function refreshAnimations() {
     
     // Recreate animations with new theme colors
     createBackgroundAnimation();
+    // Update interactive elements with new theme colors
+  setupInteractiveAnimations();
 }
+  

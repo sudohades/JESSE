@@ -783,9 +783,12 @@
   /* ---------------------------------------------
      Footer
      --------------------------------------------- */
-  #main-footer {
+#main-footer {
     padding: var(--space-xl) 0 var(--space-md);
     color: white;
+    background-image: url('../Waves/wave2.jpg');
+    background-size: cover; /* Ensures the image covers the footer */
+    background-position: center; /* Centers the image */
   }
   
   .footer-content {
