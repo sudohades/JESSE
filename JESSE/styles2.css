@@ -257,6 +257,8 @@ header.shrink nav ul li {
 
 nav ul {
   display: flex;
+  display: relative;
+  left: -35px;
   list-style: none;
   padding: 0;
 }

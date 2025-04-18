@@ -2,7 +2,7 @@ console.log('Happy developing ✨');
 
 // Header shrink on scroll
 const header = document.querySelector('header');
-const scrollThreshold = 50; // pixels
+const scrollThreshold = 40; // pixels
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > scrollThreshold) {
@@ -40,7 +40,6 @@ window.addEventListener('scroll', () => {
     }
   });
 ;
-//animation for Logo class
 // Animation for logo class
 function animateLogo(logoElement) {
   const targetText = 'JESSE';
