@@ -699,14 +699,3 @@ input:focus, select:focus, textarea:focus {
         font-size: var(--font-size-large);
     }
 }
-
-/* Light Theme Class for Theme Switching */
-.light-theme {
-    --bg-primary: var(--light-bg-primary);
-    --bg-secondary: var(--light-bg-secondary);
-    --text-primary: var(--light-text-primary);
-    --text-secondary: var(--light-text-secondary);
-    --accent-primary: var(--light-accent-primary);
-    --accent-secondary: var(--light-accent-secondary);
-    --border-color: var(--light-border);
-}

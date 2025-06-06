@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - WaveMedia</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header id="main-header" class="bg-caf0f8">
+        <nav id="main-nav">
+            <div class="logo">WaveMedia</div>
+            <ul class="nav-links">
+                <li><a href="waves-home.html">Home</a></li>
+                <li><a href="brands-page.html">Our Brands</a></li>
+                <li><a href="technical-info.html">Technical Info</a></li>
+                <li><a href="contact-page.html"class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact-hero" class="bg-ade8f4">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>Ready to transform your brand? Our team is eager to hear about your project and explore how we can help.</p>
+        </div>
+    </section>
+
+    <section id="contact-details" class="bg-90e0ef">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="info-block">
+                        <h3>Address</h3>
+                        <p>WaveMedia Headquarters</p>
+                        <p>123 Ocean Avenue</p>
+                        <p>Wave City, WC 98765</p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h3>Phone</h3>
+                        <p>Main: (555) 123-4567</p>
+                        <p>New Business: (555) 765-4321</p>
+                        <p>Support: (555) 987-6543</p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h3>Email</h3>
+                        <p>General Inquiries: info@wavemedia.com</p>
+                        <p>New Business: sales@wavemedia.com</p>
+                        <p>Careers: careers@wavemedia.com</p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h3>Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM EST</p>
+                        <p>Saturday - Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service of Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Please select</option>
+                                <option value="branding">Branding & Identity</option>
+                                <option value="digital">Digital Marketing</option>
+                                <option value="web">Web Development</option>
+                                <option value="social">Social Media Management</option>
+                                <option value="content">Content Creation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Estimated Budget</label>
+                            <select id="budget" name="budget">
+                                <option value="">Please select</option>
+                                <option value="less-than-10k">Less than $10,000</option>
+                                <option value="10k-25k">$10,000 - $25,000</option>
+                                <option value="25k-50k">$25,000 - $50,000</option>
+                                <option value="50k-100k">$50,000 - $100,000</option>
+                                <option value="more-than-100k">More than $100,000</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to our newsletter</label>
+                        </div>
+                        
+                        <button type="submit" class="btn bg-0077b6">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="office-locations" class="bg-00b4d8">
+        <div class="container">
+            <h2>Our Offices</h2>
+            
+            <div class="offices-grid">
+                <div class="office-card">
+                    <h3>Wave City (HQ)</h3>
+                    <img src="/api/placeholder/300/200" alt="Wave City Office">
+                    <address>
+                        123 Ocean Avenue<br>
+                        Wave City, WC 98765<br>
+                        (555) 123-4567
+                    </address>
+                </div>
+                
+                <div class="office-card">
+                    <h3>Coastal Heights</h3>
+                    <img src="/api/placeholder/300/200" alt="Coastal Heights Office">
+                    <address>
+                        456 Bay Street<br>
+                        Coastal Heights, CH 54321<br>
+                        (555) 234-5678
+                    </address>
+                </div>
+                
+                <div class="office-card">
+                    <h3>Blue Harbor</h3>
+                    <img src="/api/placeholder/300/200" alt="Blue Harbor Office">
+                    <address>
+                        789 Marina Road<br>
+                        Blue Harbor, BH 12345<br>
+                        (555) 345-6789
+                    </address>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="bg-48cae4">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>What information should I prepare before our first meeting?</h3>
+                    <div class="faq-answer">
+                        <p>To make our first meeting as productive as possible, please prepare information about your brand, target audience, objectives, timeline, and budget. Any examples of campaigns you admire or previous marketing materials would also be helpful.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How long does a typical advertising campaign take to develop?</h3>
+                    <div class="faq-answer">
+                        <p>Campaign development timelines vary based on scope and complexity, but typically range from 4-12 weeks from initial concept to launch. We'll provide a detailed timeline during our project planning phase.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do you work with clients outside of your office locations?</h3>
+                    <div class="faq-answer">
+                        <p>Absolutely! We work with clients globally through our remote collaboration tools and virtual meeting platforms. Our team can travel to key meetings when necessary.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How do you measure the success of an advertising campaign?</h3>
+                    <div class="faq-answer">
+                        <p>We establish clear KPIs aligned with your business objectives at the start of each project. Our analytics team provides comprehensive reporting on metrics like engagement, conversion, brand awareness, and ROI throughout the campaign lifecycle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="bg-0096c7">
+        <div class="container">
+            <h2>Ready to Make Waves?</h2>
+            <p>Let's start a conversation about your brand's potential.</p>
+            <button class="btn bg-023e8a">Schedule a Consultation</button>
+        </div>
+    </section>
+
+    <footer id="main-footer" class="bg-023e8a">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">WaveMedia</div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="brands.html">Our Brands</a></li>
+                        <li><a href="technical.html">Technical Info</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>123 Ocean Avenue, Wave City</p>
+                    <p>info@wavemedia.com</p>
+                    <p>(555) 123-4567</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">Twitter</a>
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="#" class="social-icon">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WaveMedia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
